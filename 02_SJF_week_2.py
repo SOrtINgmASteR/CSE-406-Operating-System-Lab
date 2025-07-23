@@ -14,9 +14,9 @@ n = int(input("Enter the number of processes: "))
 processes = []
 
 for i in range(n):
-    at = int(input(f"Enter arrival time for process P{i}: "))
-    bt = int(input(f"Enter burst time for process P{i}: "))
-    processes.append(Process(f"P{i}", at, bt))
+    at = int(input(f"Enter arrival time for process P{i + 1}: "))
+    bt = int(input(f"Enter burst time for process P{i + 1}: "))
+    processes.append(Process(f"P{i + 1}", at, bt))
 
 
 #  Sort processes by arrival time
