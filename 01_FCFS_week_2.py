@@ -4,9 +4,9 @@ class Process:
         self.p_id = p_id
         self.arrival_time = arrival_time
         self.burst_time = burst_time
-        self.ct = 0  # Completion Time
-        self.tat = 0  # Turn Around Time
-        self.wt = 0  # Waiting Time
+        self.ct = 0    
+        self.tat = 0   
+        self.wt = 0  
 
 # Input from user
 n = int(input("Enter the number of processes: "))
