@@ -18,10 +18,11 @@ for i in range(n):
     bt = int(input(f"Enter burst time for process P{i}: "))
     processes.append(Process(f"P{i}", at, bt))
 
-# Sort processes by arrival time initially
+
+#  Sort processes by arrival time
 processes.sort(key=lambda x: x.arrival_time)
 
-# SJF Scheduling (Non-Preemptive)
+
 current_time = 0
 completed = 0
 
@@ -46,17 +47,21 @@ while completed < n:
         processes[idx].visited = True
         completed += 1
 
+
 # Turn Around Time Calculation
 for i in range(n):
     processes[i].tat = processes[i].ct - processes[i].arrival_time
+
 
 # Waiting Time Calculation
 for i in range(n):
     processes[i].wt = processes[i].tat - processes[i].burst_time
 
+
 # Average waiting time
 total_waiting_time = sum(p.wt for p in processes)
 average_waiting_time = total_waiting_time / n
+
 
 # Output
 print("\nP-id\tAT\tBT\tCT\tTAT\tWT")
