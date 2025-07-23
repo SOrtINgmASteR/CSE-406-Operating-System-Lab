@@ -1,3 +1,4 @@
+# Class for every process
 class Process:
     def __init__(self, p_id, arrival_time, burst_time):
         self.p_id = p_id
