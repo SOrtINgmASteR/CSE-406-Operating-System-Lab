@@ -1,4 +1,4 @@
-# disk FCFS
+# disk scheduling - FCFS
 request_sequence = [0, 16, 24, 43, 50, 82, 100, 140, 150, 170, 190, 199]
 head = 50
 idx = -1
