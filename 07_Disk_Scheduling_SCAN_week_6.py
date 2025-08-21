@@ -1,8 +1,12 @@
 # Disk scheduling - SCAN
-request_sequence = [11, 34, 41, 50, 52, 69, 70, 114]
-head = 50
-disk_size = 199  # Assuming disk ends at 0 and 199
-direction = "left"
+n = int(input("Enter number of disk requests: "))
+request_sequence = []
+for i in range(n):
+    req = int(input(f"Enter request {i+1}: "))
+    request_sequence.append(req)
+head = int(input("Enter initial head position: "))
+disk_size = int(input("Enter disk size (last cylinder number): "))
+direction = input("Enter direction (left/right): ").strip().lower()
 
 requests = sorted(request_sequence)
 
@@ -45,7 +49,7 @@ else:
         total_movement += abs(head - down[0]) 
         total_movement += abs(down[0] - down[-1]) 
         total_movement += abs(down[-1] - 0)
-        
+
     if len(down) > 0 and len(up) > 0:
         total_movement += abs(0 - up[0]) 
         total_movement += abs(up[0] - up[-1])  

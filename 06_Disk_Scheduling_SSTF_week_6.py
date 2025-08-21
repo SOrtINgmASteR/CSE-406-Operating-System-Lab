@@ -1,6 +1,10 @@
 # Disk scheduling - SSTF
-request_sequence = [11, 34, 41, 50, 52, 69, 70, 114]
-head = 50
+n = int(input("Enter number of disk requests: "))
+request_sequence = []
+for i in range(n):
+    req = int(input(f"Enter request {i+1}: "))
+    request_sequence.append(req)
+head = int(input("Enter initial head position: "))
 requests = request_sequence.copy()
 total_movement = 0
 order = []
