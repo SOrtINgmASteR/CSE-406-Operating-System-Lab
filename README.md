@@ -9,6 +9,9 @@
 3. Round Robin (Preemptive Scheduling)  
 
 #### Lab - 5th Week - 11/08/25  
-4. Priority Scheduling (Non-preemptive) 
-5. Disk Scheduling - FCFS 
+1. Priority Scheduling (Non-preemptive) 
+2. Disk Scheduling - FCFS 
 
+#### Lab - 6th Week - 18/08/25  
+1. Disk Scheduling - SSTF 
+2. Disk Scheduling - SCAN 
