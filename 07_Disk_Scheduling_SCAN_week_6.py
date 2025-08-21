@@ -27,28 +27,26 @@ if direction == "right":
         order.append(r)
 
     if len(up) > 0:
-        total_movement += abs(head - up[0])  # Move from head to first right request
-        total_movement += abs(up[0] - up[-1])  # Continue to last right request
+        total_movement += abs(head - up[0])  
+        total_movement += abs(up[0] - up[-1])  
 
     if len(up) > 0 and len(down) > 0:
-        total_movement += abs(up[-1] - down[0])  # Reverse to first left request
-        total_movement += abs(down[0] - down[-1])  # Continue to last left request
+        total_movement += abs(up[-1] - down[0])  
+        total_movement += abs(down[0] - down[-1])  
 
 else:
-    # First service all requests to the left
     for r in down:
         order.append(r)
-    # Then service requests to the right
     for r in up:
         order.append(r)
 
     if len(down) > 0:
-        total_movement += abs(head - down[0])  # Move from head to first left request
-        total_movement += abs(down[0] - down[-1])  # Continue to last left request
+        total_movement += abs(head - down[0]) 
+        total_movement += abs(down[0] - down[-1]) 
 
     if len(down) > 0 and len(up) > 0:
-        total_movement += abs(down[-1] - up[0])  # Reverse to first right request
-        total_movement += abs(up[0] - up[-1])  # Continue to last right request
+        total_movement += abs(down[-1] - up[0]) 
+        total_movement += abs(up[0] - up[-1]) 
 
 print("Order of servicing requests:", order)
 print(f"Total head movement: {total_movement}")
