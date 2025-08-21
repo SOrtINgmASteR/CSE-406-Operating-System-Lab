@@ -29,6 +29,7 @@ if direction == "right":
     if len(up) > 0:
         total_movement += abs(head - up[0])  
         total_movement += abs(up[0] - up[-1])  
+        total_movement += abs(up[-1] - disk_size)  
 
     if len(up) > 0 and len(down) > 0:
         total_movement += abs(up[-1] - down[0])  
@@ -43,10 +44,11 @@ else:
     if len(down) > 0:
         total_movement += abs(head - down[0]) 
         total_movement += abs(down[0] - down[-1]) 
-
+        total_movement += abs(down[-1] - 0)
+        
     if len(down) > 0 and len(up) > 0:
-        total_movement += abs(down[-1] - up[0]) 
-        total_movement += abs(up[0] - up[-1]) 
+        total_movement += abs(0 - up[0]) 
+        total_movement += abs(up[0] - up[-1])  
 
 print("Order of servicing requests:", order)
 print(f"Total head movement: {total_movement}")
