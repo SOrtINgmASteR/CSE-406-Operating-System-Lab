@@ -66,5 +66,6 @@ print("\nPID\tAT\tBT\tCT\tTAT\tWT")
 for p in processes:
     print(f"{p.pid}\t{p.arrival_time}\t{p.burst_time}\t{p.completion_time}\t{p.turn_around_time}\t{p.waiting_time}")
 
-avg_wt = sum(p.waiting_time for p in processes) / n
+avg_wt = sum(p.waiting_time for p in processes)/ n
 print(f"\nAverage Waiting Time: {avg_wt:.2f}")
+
