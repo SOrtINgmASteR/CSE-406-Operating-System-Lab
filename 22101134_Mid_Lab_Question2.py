@@ -50,5 +50,6 @@ elif direction == "left":
         total_movement += abs(0 - up[0]) 
         total_movement += abs(up[0] - up[-1])  
 
-print("Order of servicing requests:", order)
-print(f"Total head movement: {total_movement}")
+print("Order serving requests:", order)
+print(f"Total Seek Time: {total_movement}")
+
