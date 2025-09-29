@@ -22,5 +22,4 @@ for page in page_sequence:
         page_hit += 1
 
 print(f"Page Hits: {page_hit}")
-
 print(f"Page Faults: {page_faults}")
