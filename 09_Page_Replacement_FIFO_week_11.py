@@ -7,7 +7,7 @@ page_hit = 0
 frame_size = int(input("Enter Frame Size: "))
 n = int(input("Enter number of sequence: "))
 for i in range(n):
-    x = input(f"Enter {i+1} st Sequence: ")
+    x = input(f"Enter {i+1}st Sequence: ")
     page_sequence.append(x)
 
 for page in page_sequence:
@@ -22,4 +22,5 @@ for page in page_sequence:
         page_hit += 1
 
 print(f"Page Hits: {page_hit}")
+
 print(f"Page Faults: {page_faults}")
