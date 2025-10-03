@@ -15,3 +15,7 @@
 #### Lab - 6th Week - 18/08/25  
 1. Disk Scheduling - SSTF 
 2. Disk Scheduling - SCAN 
+
+#### Lab - 11th Week - 29/08/25  
+1. Disk Scheduling - C-SCAN 
+2. Page Replacement - FIFO 

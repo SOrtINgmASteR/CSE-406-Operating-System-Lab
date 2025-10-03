@@ -1,4 +1,4 @@
-# Page Replacemnt - FIFO
+# Page Replacement - FIFO
 frames = []
 page_sequence = [] 
 page_faults = 0
