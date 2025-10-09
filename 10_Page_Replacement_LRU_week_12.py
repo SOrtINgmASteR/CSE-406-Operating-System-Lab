@@ -13,7 +13,7 @@ for i in range(n):
 for page in page_sequence:
     if page not in frame:
         page_faults += 1
-        print("Miss: ")
+        # print("Miss: ")
         if len(frame) == 4:
             frame.pop(0)
             frame.append(page)
@@ -22,10 +22,10 @@ for page in page_sequence:
         
     else:
         page_hit += 1
-        print("Hit: ")
+        # print("Hit: ")
         frame.remove(page)
         frame.append(page)  
-    print(frame)     
+    # print(frame)     
 
 print(f"Page Hits: {page_hit}")
 print(f"Page Faults: {page_faults}")
@@ -34,6 +34,7 @@ print(f"Page Fault Ratio: {(page_faults / len(page_sequence)) * 100}")
 print(f"Page Hit Ratio: {(page_hit / len(page_sequence)) * 100}")
 
 '''
+Input: Frame Sequence
 7
 0
 1
