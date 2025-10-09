@@ -16,10 +16,10 @@
 1. Disk Scheduling - SSTF 
 2. Disk Scheduling - SCAN 
 
-#### Lab - 11th Week - 29/08/25  
+#### Lab - 11th Week - 29/09/25  
 1. Disk Scheduling - C-SCAN 
 2. Page Replacement - FIFO 
 
-#### Lab - 12th Week - 29/06/25  
+#### Lab - 12th Week - 06/10/25  
 1. Page Replacement - LRU
 2. Page Replacement - MRU 
